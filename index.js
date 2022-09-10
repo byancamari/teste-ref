@@ -15,8 +15,6 @@ document.addEventListener('scroll', () => {
 })
 
 const homeButton = document.getElementById('home-button')
-const competiçõesButton = document.getElementById('competiçoes-button')
-const integrantesButton = document.getElementById('integrantes-button')
 homeButton.addEventListener('click', () => {
     window.scroll({
         top: 0,
@@ -24,6 +22,7 @@ homeButton.addEventListener('click', () => {
     })
 })
 
+const competiçõesButton = document.getElementById('competiçoes-button')
 competiçõesButton.addEventListener('click', () => {
     window.scroll({
         top: 300,
@@ -31,6 +30,7 @@ competiçõesButton.addEventListener('click', () => {
     })
 })
 
+const integrantesButton = document.getElementById('integrantes-button')
 integrantesButton.addEventListener('click', () => {
     window.scroll({
         top: 300,
