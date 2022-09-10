@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --green:#69d625;
+    --active:#69d625;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+.navigation .logo{
+    color: var(--green);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--dark);
+}
+#nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+#nav-menu li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--green);
+}
+.home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10% 0px 10%;
+    margin-bottom: 110px
+}
+.home-text {
+    display: flex;
+    flex-direction: column;
+}
+.home-text h4 {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+.home-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn {
+    width: fit-content;
+    margin-top: 25px;
+    padding: 15px 45px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #1d1f1c;
+}
+.home-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.competições {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.competições-container {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.competições-container h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.lista-competições {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.lista-competições h4 {
+    color: #fff;
+    background-color: var(--dark);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    #nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        gap: 2rem;
+        margin-bottom: 50px;
+    }
+    .home h3{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img img {
+        width: 90%;
+    }
+    .home-text {
+        align-items: center;
+    }
+    .competições {
+        max-width: 300px;
+    }
+}
